@@ -1,6 +1,8 @@
 .DS_Store
 __pycache__
 .venv/
+venv/
+traffic_detector_dataset/
 tmp/
 APP_DATA/
 dataset_tools/

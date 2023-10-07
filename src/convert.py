@@ -1,13 +1,20 @@
-import supervisely as sly
 import os
 from collections import defaultdict
-from dataset_tools.convert import unpack_if_archive
-import src.settings as s
 from urllib.parse import unquote, urlparse
-from supervisely.io.fs import get_file_name, get_file_name_with_ext, dir_exists, get_file_ext
-from supervisely.io.json import load_json_file
 
+import supervisely as sly
+from dataset_tools.convert import unpack_if_archive
+from supervisely.io.fs import (
+    dir_exists,
+    get_file_ext,
+    get_file_name,
+    get_file_name_with_ext,
+)
+from supervisely.io.json import load_json_file
 from tqdm import tqdm
+
+import src.settings as s
+
 
 def download_dataset(teamfiles_dir: str) -> str:
     """Use it for large datasets to convert them on the instance"""
@@ -72,11 +79,11 @@ def convert_and_upload_supervisely_project(
 ) -> sly.ProjectInfo:
     ### Function should read local dataset and upload it to Supervisely project, then return project info.###
     dataset_path = "traffic_detector_dataset"
-    batch_size = 30
+    batch_size = 10
     images_folder_name = "images"
     images_ext = ".jpg"
     ann_ext = ".json"
-
+    broken_data = [([[323, 437], [329, 433]], 'traffic_detector_dataset/train/moto8.jpg')]
 
     def create_ann(image_path):
         labels = []
@@ -170,5 +177,5 @@ def convert_and_upload_supervisely_project(
                 api.annotation.upload_anns(img_ids, anns_batch)
 
                 progress.iters_done_report(len(img_names_batch))
-
+    print(broken_data)
     return project
