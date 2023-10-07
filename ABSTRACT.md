@@ -1,3 +1,3 @@
-**Mini Traffic Detection** dataset comprises 8 classes with 30 instances each, divided into 70% for training and 30% for validation. Primarily designed for computer vision tasks, it focuses on traffic object detection. It's an excellent choice for transfer learning with Detectron2 for custom object detection and segmentation projects. The dataset includes classes such as Bicycle, Bus, Car, Motorcycle, Person, Traffic light, Truck, and Stop sign.
+**Mini Traffic Detection** dataset comprises 8 classes with 30 instances each, divided into 70% for training and 30% for validation. Primarily designed for computer vision tasks, it focuses on traffic object detection. It's an excellent choice for transfer learning with Detectron2 for custom object detection and segmentation projects. The dataset includes classes such as *bicycle*, *bus*, *car*, *motorcycle*, *person*, *traffic_light*, *truck*, and *stop_sign*.
 
-<i>Please note, bad data was detected in moto8.jpg image</i>
+<i>Please note that bad data was detected in moto8.jpg.</i>
