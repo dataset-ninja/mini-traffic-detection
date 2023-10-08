@@ -21,7 +21,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.DbCL_1_0()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.SmartCity(is_used=False),Industry.Logistics(is_used=False)]
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.SmartCity(is_used=False),Industry.Logistics(is_used=False),Industry.TrafficMonitoring()]
 CATEGORY: Category = Category.Safety()
 
 CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation(), CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
