@@ -1,6 +1,6 @@
 Dataset **Mini Traffic Detection** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/b/w/kJ/1sr9W5O9K6opXUpkr5mhmPgefnE3FtfmLqLYrQ8f2mSJugDekGOWtSC7P8qenHnkHeJhIzdzRG4pJu9qgPRcg4IbdRqEitptBs9IQiGFCxWhF23wr7DFVELj3elb.tar)
+ [Download](https://www.dropbox.com/scl/fi/gzr4saaovuffnotdphkp5/mini-traffic-detection-DatasetNinja.tar?rlkey=9tklmjhzd7xoz2uea1upaipte&dl=1)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
